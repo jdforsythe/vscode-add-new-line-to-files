@@ -2,8 +2,18 @@
   "name": "add-new-line-to-files",
   "displayName": "Add New Line to Files",
   "description": "Ensures all files end in a new line on save",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "jdforsythe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jdforsythe/vscode-add-new-line-to-files/issue",
+    "email": "jdforsythe@gmail.com"
+  },
+  "homepage": "https://github.com/jdforsythe/vscode-add-new-lint-to-files",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jdforsythe/vscode-add-new-line-to-files"
+  },
   "engines": {
     "vscode": "^1.0.0"
   },
