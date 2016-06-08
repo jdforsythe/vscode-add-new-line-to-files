@@ -1,0 +1,39 @@
+{
+  "name": "add-new-line-to-files",
+  "displayName": "Add New Line to Files",
+  "description": "Ensures all files end in a new line on save",
+  "version": "0.1.0",
+  "publisher": "jdforsythe",
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "Line ending configuration",
+      "properties": {
+        "editor.lineEnding": {
+          "type": "string",
+          "default": "\n",
+          "description": "The line ending you prefer"
+        }
+      }
+    }
+  },
+  "main": "./out/src/extension",
+  "scripts": {
+    "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+    "compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install"
+  },
+  "devDependencies": {
+    "typescript": "^1.8.5",
+    "vscode": "^0.11.0"
+  }
+}
